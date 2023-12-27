@@ -73,12 +73,11 @@ public class PetHouse {
     }
 
 
-    public boolean removeAnimal(Animal animal){
+    public void removeAnimal(Animal animal){
         if (!this.animals.contains(animal)){
-            return false;
+            return;
         }
         animals.remove(animal);
-        return true;
     }
 
 }
